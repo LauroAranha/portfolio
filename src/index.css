@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  background-color: #32385c;
+  color: white
+}
+
+/* Firefox */
+::-moz-selection {
+  color: white;
+  background: #435372;
+}
+
+::selection {
+  color: white;
+  background: #435372;
+}

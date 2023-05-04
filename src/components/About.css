@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+.about-container {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1vw;
+}
+
+.about-me-title {
+    font-weight: 300;
+    font-size: 36pt;
+}
+
+.about-me-paragraph {
+    font-weight: 100;
+    font-size: 26pt;
+}

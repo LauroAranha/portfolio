@@ -4,9 +4,9 @@ import './Skills.css'
 
 const Skills = () => {
     return (
-        <div className="skills-container">
+        <div id='skills' className="skills-container">
             <h1> <span className="skills-title">hard skills set</span> <span className="introduction-main-text-02"></span></h1>
-            <p className="skills-sub-title">My current hard skills ranges from  </p>
+            <p className="skills-sub-title">My current hard skills ranges from:  </p>
             <div className="skills-cards-container">
                 <div className="skills-card">
                     <div className="skills-card-info">
@@ -27,7 +27,7 @@ const Skills = () => {
                 </div>
                 <div className="skills-card">
                     <div className="skills-card-info">
-                        <h1><p>Databases</p></h1>
+                        <h1>Databases</h1>
                         <li><p>Firebase</p></li>
                         <li><p>MySQL</p></li>
                     </div>
@@ -41,7 +41,7 @@ const Skills = () => {
                 </div>
                 <div className="skills-card">
                     <div className="skills-card-info">
-                        <h1><p>Automation</p></h1>
+                        <h1>Automation</h1>
                         <li><p>Bash</p></li>
                     </div>
                 </div>

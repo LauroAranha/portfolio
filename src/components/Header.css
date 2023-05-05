@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 .header-container {
-    height: 15vh;
+    height: 10vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    background-color: #32385c;
+    background-color: #282c44;
     top: 0
 }
 
@@ -19,7 +19,6 @@
 
 .header-title {
     font-size: 26pt;
-
     font-weight: 100;
     padding: 1vw;
 }
@@ -31,13 +30,14 @@
 }
 
 .header-container-sections a {
-
+    text-decoration: none;
     padding: 10;
     width: auto;
     height: 100%;
     text-align: center;
     transition: 0.2s;
     cursor: pointer;
+    color: white;
 }
 
 .header-container-sections a:hover {
@@ -54,4 +54,83 @@
 
 .header-container-sections a:last-child {
     border-right: 0;
+}
+
+.header-sidebar-container {
+    opacity: 0.8;
+    background-color: #6e6e6e;
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    transition: right 0.5s ease-in-out;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #8f8f8f;
+    background-color: #22263f;
+    color: white;
+}
+
+.sidebar h1 {
+    font-size: 26pt;
+    font-weight: 100;
+    padding: 2vh;
+}
+
+.sidebar a {
+    width: auto;
+    height: 10vh;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    transition: 0.2s;
+    cursor: pointer;
+    display: flex;
+}
+
+.sidebar a:last-child {
+    border-bottom: 0;
+}
+
+.sidebar p {
+    vertical-align: middle;
+    align-self: center;
+    padding: 10%;
+    font-size: 16pt;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.hamburger-container {
+    position: relative;
+    right: 0;
+    z-index: 2;
+}
+
+@media screen and (min-width: 801px) {
+    .phone-vertical-sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header-container-sections {
+        display: none;
+    }
 }

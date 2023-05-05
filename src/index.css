@@ -1,3 +1,8 @@
+*, html {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 16vh
+}
+
 body {
   margin: 0;
   background-color: #32385c;
@@ -14,4 +19,26 @@ body {
 ::selection {
   color: white;
   background: #435372;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #435372;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(168, 168, 168);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #798baa;
 }

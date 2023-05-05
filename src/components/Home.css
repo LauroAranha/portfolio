@@ -4,7 +4,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 15vh
+    margin-top: 10vh
 }
 
 .introduction-container {
@@ -35,4 +35,73 @@
     width: 50%;
     margin: auto;
     display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .introduction-container {
+        width: 100%;
+        font-size: 24pt;
+        flex-direction: column;
+        padding: 10%;
+    }
+
+    .introduction-main-text-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction-description-text {
+        width: 100%;
+        margin: auto;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .introduction-container {
+        width: 100%;
+        font-size: 24pt;
+        flex-direction: column;
+        padding: 10%;
+    }
+
+    .introduction-main-text-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction-description-text {
+        width: 100%;
+        margin: auto;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .introduction-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .introduction-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .introduction-container {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .introduction-container {
+        width: 70%;
+        font-size: 36pt;
+    }
 }
